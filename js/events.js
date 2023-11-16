@@ -3,6 +3,7 @@ import {redirectForWhatsappWithMessage}  from "./whatsapp.js"
 const buttonBoxRectangleManuntencao = document.getElementById("boxRectangleButtonManuntencao")
 if (buttonBoxRectangleManuntencao) { // Verifica se o botão existe no HTML
     buttonBoxRectangleManuntencao.addEventListener("click", ()=>{
+        alert("Iremos te redirecionar para o whatsapp agora !")
         const date = new Date
         let messageCumprimentationDay = "" // Mensagem de Bom Dia, Boa Tarde ou Boa noite
         const actualyHour = date.getHours()
