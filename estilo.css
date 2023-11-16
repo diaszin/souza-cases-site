@@ -2,13 +2,15 @@
 
 :root {
     --cor-principal: #15193E;
-    --cor-branca: #FFFFFF
+    --cor-branca: #FFFFFF;
+    --cor-texto-secundario: #333333;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Inter', 'Arial';
+    box-sizing: border-box;
 }
 
 nav {
@@ -27,6 +29,7 @@ nav {
     font-size: 0.6rem;
     color: var(--cor-branca);
 }
+
 /* Define a grossura da fonte se a classe dele for ativo */
 li.active {
     font-weight: 700;
@@ -38,19 +41,29 @@ li:not(.active) {
 
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: .8rem;
 }
 
-.box-card{
+.group-box-card {
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    margin: 0 0 1rem 0;
+}
+
+.box-card {
     width: 95px;
     height: 108.51px;
     background-color: var(--cor-principal);
     border-radius: 15px;
-    margin-block: 4rem;
+    margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +72,7 @@ main{
     box-shadow: 7px 12px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.box-card-subtitle{
+.box-card-subtitle {
     font-size: 0.4rem;
     width: 100%;
     display: flex;
@@ -68,4 +81,40 @@ main{
     text-align: center;
     color: var(--cor-branca);
     font-weight: 600;
+}
+
+.box-rectangle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    min-width: 95vw;
+    margin-inline: 0.6rem;
+    gap: 2px;
+    border-radius: 20px;
+}
+
+.box-rectangle-subtitle {
+    width: 55%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    
+    font-weight: 700;
+}
+
+/* Elemento se for par */
+.box-rectangle:nth-child(even) {
+    background-color: var(--cor-branca);
+    color: var(--cor-texto-secundario);
+    box-shadow: 4px 16px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Elemento se for impar */
+.box-rectangle:nth-child(odd) {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
 }
