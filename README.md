@@ -6,3 +6,5 @@
 		* Na Dashboard deve ter o CRUD completo
 		* Já na landing page, somente a consulta
 	* Verificar falhas de segurançao no sistema ao concluir
+* Informações do Whatsapp
+	* [https://faq.whatsapp.com/5913398998672934/] - Link do FAQ do Whatsapp
