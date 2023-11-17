@@ -16,10 +16,7 @@ if (buttonBoxRectangleManuntencao) { // Verifica se o botão existe no HTML
         else{
             messageCumprimentationDay = "Boa noite"
         }
-        let message = `
-        Olá, ${messageCumprimentationDay}
-        Gostaria de realizar um orçamento na manutenção do meu aparelho.
-        `
+        let message = "Olá, ${messageCumprimentationDay}\n*Gostaria de realizar um orçamento na manutenção do meu aparelho.*"
         redirectForWhatsappWithMessage(message)
 
     })
