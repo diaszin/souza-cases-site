@@ -147,3 +147,10 @@ footer{
 #instagram-link>span{
     font-size: 0.6rem;
 }
+
+/* Estilo no modo escuro */
+@media screen and (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--cor-branca);
+    }
+}
