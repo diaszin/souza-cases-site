@@ -38,3 +38,6 @@ class Produto {
 - Nessa pasta irá conter outras pastas com a entidades e seu respectivo CRUD. No caso, a pasta produto, irá conter arquivos php, como create, update, delete, get. Onde ocorrerá de fato a ação para o bano de dados
 
 - Nessa pasta deve conter os arquivos referentes ao LAYOUT do dashboard, como tela de cadastro de produto, tela de consulta de produto e etc. Em relação ao nome, siga esse padrão 'nomeDaAção_Entidade.php'.
+
+## Links Úteis
+* [PHP - W3Schools](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
