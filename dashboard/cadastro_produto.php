@@ -12,6 +12,7 @@
 <body class="h-100">
     <div class="d-flex align-items-center justify-content-center w-100 h-100">
         <form action="produto/create.php" method="post" class="w-50 h-75">
+
             <div class="mb-3">
                 <label for="productName" class="form-label">Digite o nome do produto <span class="text-danger">*</span></label>
                 <input required type="text" class="form-control" name="productName" id="productName">
@@ -24,10 +25,14 @@
                 <label for="productDescription" class="form-label">Descrição do produto <span class="text-danger">*</span></label>
                 <textarea required class="form-control" style="resize: none;" id="productDescription" name="productDescription" rows="8"></textarea>
             </div>
+            <div class="mb-3">
+                <label for="productImage" title="Caso não seja escolhido nenhuma imagem, o produto só irá aparecer no modo tabela" class="form-label">Escolha a imagem do produto</label>
+                <input class="form-control" type="file" id="productImage">
+            </div>
             <div class="d-flex w-100 gap-3" style="height: 3.2rem;">
                 <input class="btn btn-primary w-100" type="submit" value="Cadastrar Produto">
-                <a class="btn btn-secondary w-100 d-flex justify-content-center align-items-center" href="./" >
-                Ir para o Dashboard
+                <a class="btn btn-secondary w-100 d-flex justify-content-center align-items-center" href="./">
+                    Ir para o Dashboard
                 </a>
             </div>
         </form>
