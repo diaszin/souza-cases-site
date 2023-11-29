@@ -11,7 +11,7 @@
 
 <body class="h-100">
     <div class="d-flex align-items-center justify-content-center w-100 h-100">
-        <form action="produto/create.php" method="post" class="w-50 h-75">
+        <form action="produto/create.php" method="post" class="w-50 h-75" autocomplete="off">
 
             <div class="mb-3">
                 <label for="productName" class="form-label">Digite o nome do produto <span class="text-danger">*</span></label>
@@ -19,7 +19,7 @@
             </div>
             <div class="mb-3">
                 <label for="productPrice" class="form-label">Digite o preço do produto <span class="text-danger">*</span></label>
-                <input placeholder="R$ xxxx,xx" pattern="/[0-9]{1,5}[.|,][0-9]{2}/g" required type="number" class="form-control" name="productPrice" id="productPrice">
+                <input placeholder="R$ xxxx,xx" pattern="/[0-9]{1,5}[.|,][0-9]{2}/g" required type="number" step="0.10" class="form-control" name="productPrice" id="productPrice">
             </div>
             <div class="mb-3">
                 <label for="productDescription" class="form-label">Descrição do produto <span class="text-danger">*</span></label>
