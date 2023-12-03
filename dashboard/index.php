@@ -10,8 +10,12 @@
     <script src="./bootstrap/js/bootstrap.bundle.min.js" defer></script>
     <script src="./js/events.js" defer></script>
 </head>
-
 <body class="d-flex  flex-column align-items-center justify-content-center">
+    <?php
+        if(!isset($_COOKIE["isLogged"]) || $_COOKIE["isLogged"] == false){
+            header("location: ../login.php");
+        }
+    ?>
     <h2 class="h2 d-flex  flex-row align-items-center justify-content-center" style="height: 10rem;">Produtos cadastrados</h2>
     <div class="d-flex flex-column align-items-center justify-content-center w-75">
         <div class=" align-self-start my-2">

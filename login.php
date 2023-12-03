@@ -11,13 +11,13 @@
 
 <body class=" d-flex flex-column gap-3 align-items-center justify-content-center h-100 w-100">
     <h3>Login - Souza Cases Admin</h3>
-    <form class="w-25" action="user/login.php" method="post" autocomplete="off">
+    <form class="w-25" action="./user/login.php" method="post" autocomplete="off">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Senha</label>
+            <label for="password" class="form-label">Senha</label>
             <input type="password" class="form-control" id="password" name="password">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="showPassword">
@@ -26,7 +26,7 @@
                 </label>
             </div>
         </div>
-        <button type="button" class="btn btn-primary w-100">Fazer login</button>
+        <button type="submit" class="btn btn-primary w-100">Fazer login</button>
     </form>
     <!-- Script -->
     <script>

@@ -10,6 +10,11 @@
 </head>
 
 <body class="h-100">
+    <?php
+    if (!isset($_COOKIE["isLogged"]) || $_COOKIE["isLogged"] == false) {
+        header("location: ../login.php");
+    }
+    ?>
     <div class="d-flex align-items-center justify-content-center w-100 h-100">
         <form action="produto/create.php" method="post" class="w-50 h-75" autocomplete="off">
 
