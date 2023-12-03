@@ -17,15 +17,6 @@ class Produto {
 
             // Executar a instrução SQL
             $stmt->execute();
-            if($stmt == TRUE){
-                echo 'Funcionou';
-            }else{
-                echo 'Não Funcionou';
-            }
-            // Fechar a conexão
-            $conexao = null;
-
-            echo "Produto cadastrado com sucesso!";
             $conexao = null;
         } catch (PDOException $e) {
             // Em caso de erro, imprimir a mensagem de erro
