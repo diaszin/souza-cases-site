@@ -35,6 +35,14 @@ class Produto {
 
         return $result;
     }
+
+    public function delete(int $id){
+        global $conexao;
+        $sql = "DELETE FROM produto WHERE id=?";
+        $stmt = $conexao->prepare($sql);
+        $stmt->bind_param("d", $id);
+        return $stmt->execute();
+    }
 }
 
 ?>

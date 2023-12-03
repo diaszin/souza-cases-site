@@ -8,6 +8,7 @@
     <!-- Link do Bootstrap -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <script src="./bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/events.js" defer></script>
 </head>
 
 <body class="d-flex  flex-column align-items-center justify-content-center">
@@ -42,13 +43,14 @@
                 <td>$descricaoProduto</td>
                 <td><button type='button' class='btn btn-light'>Ver imagem</button></td>
                 <td><button type='button' class='btn btn-secondary'>Atualizar</button></td>
-                <td><button type='button' class='btn btn-danger'>Excluir</button></td>
+                <td><button type='button' class='btn btn-danger' onclick='deleteProduct($idProduto)'>Excluir</button></td>
             </tr>";
                 }
                 ?>
             </tbody>
         </table>
     </div>
+
 </body>
 
 </html>
