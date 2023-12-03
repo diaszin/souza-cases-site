@@ -6,3 +6,7 @@ $productPrice = $_POST['productPrice'];
 $productDescription = $_POST['productDescription'];
 
 $produto->create($productName, $productPrice, $productDescription);
+
+// Redireciona para o dashboard
+header('location: ../');
+die();
